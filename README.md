@@ -1,7 +1,7 @@
 # Ball-Balancing-Using-a-Robotic-Arm-
 Ball Balancing Using a Robotic Arm (MuJoCo Simulation)
 
-Project Overview
+# Project Overview
 This project presents a simulation-based implementation of a ball balancing system using a robotic arm.
 A flat plate is attached to the end-effector of a two-degree-of-freedom robotic arm, and a ball is placed on top of the plate.
 By tilting the plate through controlled joint motions, the ball moves due to gravity and contact forces.
@@ -13,7 +13,7 @@ Both open-loop experiments and closed-loop PID control are used to study the sys
 The simulation is implemented using the MuJoCo physics engine and Python.
 
 
-System Description
+# System Description
 - Robotic Arm: A serial robotic arm with two rotational joints.
 - Plate: Rigidly attached to the second link of the arm.
 - Ball: Modeled as a free rigid body.
@@ -23,7 +23,7 @@ The plate orientation is controlled directly through joint commands.
 Inverse kinematics is not required.
 
 
-Project Structure
+# Project Structure
 
 Ball Balancing Using a Robotic Arm in Simulation/
 - src/
@@ -38,14 +38,14 @@ Ball Balancing Using a Robotic Arm in Simulation/
 - requirements.txt
 
 
-Requirements
+# Requirements
 - Python 3.8 or higher
 - MuJoCo
 - NumPy
 - Matplotlib
 
 
-How to Run the Project
+# How to Run the Project
 
 1. Install the required libraries:
 pip install -r requirements.txt
@@ -57,7 +57,7 @@ python src/simulation.py
 python src/control.py
 
 
-Experiments and Results
+# Experiments and Results
 
 Open-loop experiments apply smooth joint motions to tilt the plate.
 The ball moves due to gravity and drifts away from the center, showing the unstable nature of the system.
@@ -65,14 +65,14 @@ The ball moves due to gravity and drifts away from the center, showing the unsta
 Closed-loop PID control improves stability and keeps the ball closer to the desired position.
 
 
-Report
+# Report
 A detailed explanation is provided in the Robot Programming project report.
 
 
-Authors
+# Authors
 Nagham Sleman – Simulation modeling, XML implementation, visualization
 Hazem Afif – Control design, PID implementation, performance evaluation
 
 
-Notes
+# Notes
 This project is simulation-based and intended for educational purposes.
